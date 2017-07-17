@@ -1,14 +1,5 @@
-/* Modified from a Bootstrap Template by:
- * Carlos Alvarez
- * URL: http://Alvarez.is
- *
- * Project Name: NYC Design
- * Version: 1.0
- */
-
-
 /* ==========================================================================
-   Base Styles, Bootstrap Modifications & Fonts Import
+                                General Styles
    ========================================================================== */
 
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
@@ -20,51 +11,6 @@ input,
 select,
 textarea {
     color: #222;
-}
-
-/*
- * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-    background: #f2c2c9;
-    color: #a4003a;
-    text-shadow: none;
-}
-
-::selection {
-    background: #16a085;
-    color: #a4003a;
-    text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
- hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-.centered {
-	text-align: center
-}
-
-
-/* ==========================================================================
-   General styles
-   ========================================================================== */
-
-html,
-body {
-    height: 100%;
 }
 
 body {
@@ -88,8 +34,298 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
 }
 
+.big-bold {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.mt {
+	margin-top: 100px;
+}
+
+.bump-down {
+  padding-top: 50px;
+}
+
 /* ==========================================================================
-   MENU CONFIGURATION
+                                  Jumbotron
+   ========================================================================== */
+
+#headerwrap {
+	background: url(../img/workspace.jpg) no-repeat center top;
+	margin-top: 0px;
+	padding-top:120px;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 100vh;
+	width: 100%;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#headerwrap h1 {
+  text-transform: uppercase;
+	color:#ffffff;
+	margin-top: 90px;
+	padding-bottom: 30px;
+	letter-spacing: 8px;
+	font-size: 80px;
+	font-weight: bold;
+	text-shadow: 2px 2px 2px #555;
+}
+
+/***** Countdown Timer *****/
+#clockdiv{
+	color: #fff;
+	display: inline-block;
+	font-weight: 200;
+	text-align: center;
+	font-size: 30px;
+}
+
+#clockdiv > div{
+	padding: 10px;
+	border-radius: 3px;
+	background: #2f2f2f;
+	display: inline-block;
+}
+
+#clockdiv div > span{
+	padding: 15px;
+	border-radius: 3px;
+	background: #555;
+	display: inline-block;
+}
+
+/* ==========================================================================
+                                About Section
+   ========================================================================== */
+
+#aboutwrap {
+	margin-top: 80px;
+	margin-bottom: 80px;
+  min-height: 100vh;
+}
+
+#aboutwrap i {
+	font-size: 50px;
+}
+
+.name-zig {
+	width: 146px;
+	height: 17px;
+	margin: 20px 5px 20px;
+	background: url(../img/name-zig.png) 0 0 no-repeat;
+	background-size: 146px 17px;
+}
+
+.title h2 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 4rem;
+	line-height: 1.45;
+	font-weight: 300;
+}
+
+/* ==========================================================================
+                                Sponsor Section
+   ========================================================================== */
+
+#portfoliowrap {
+	display: block;
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+#portfoliowrap h1 {
+	font-weight: 300;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.mb {
+	margin-bottom: 60px;
+}
+
+/* ==========================================================================
+                                  FAQ Section
+   ========================================================================== */
+
+#faqwrap {
+	display: block;
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+#faqwrap h1 {
+	font-weight: 300;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.question {
+	text-align: left;
+}
+
+.question small {
+	font-size: 12px;
+	font-weight: bold
+}
+
+.question i {
+	float: left;
+	margin-right: 15px;
+	font-size: 30px;
+	vertical-align: middle;
+}
+
+.question .text {
+	color: #767676
+}
+
+/* ==========================================================================
+                          Hackathon Leaders Section
+   ========================================================================== */
+
+#leaders {
+  color: #fff;
+	display: block;
+	margin-top: 80px;
+	margin-bottom: 80px;
+	background-color: #2f2f2f;
+}
+
+/* ==========================================================================
+                                RSVP Section
+   ========================================================================== */
+
+#contactwrap {
+	margin-top: 0px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+#contactwrap small {
+	font-size: 13px;
+}
+
+#contactwrap label {
+	color: #f2f2f2;
+	margin-top: 10px;
+}
+
+/* ==========================================================================
+                              Sponsor Hover Effect
+   ========================================================================== */
+   @-webkit-keyframes swing
+   {
+       15%
+       {
+           -webkit-transform: translateX(5px);
+           transform: translateX(5px);
+       }
+       30%
+       {
+           -webkit-transform: translateX(-5px);
+          transform: translateX(-5px);
+       }
+       50%
+       {
+           -webkit-transform: translateX(3px);
+           transform: translateX(3px);
+       }
+       65%
+       {
+           -webkit-transform: translateX(-3px);
+           transform: translateX(-3px);
+       }
+       80%
+       {
+           -webkit-transform: translateX(2px);
+           transform: translateX(2px);
+       }
+       100%
+       {
+           -webkit-transform: translateX(0);
+           transform: translateX(0);
+       }
+   }
+   @keyframes swing
+   {
+       15%
+       {
+           -webkit-transform: translateX(5px);
+           transform: translateX(5px);
+       }
+       30%
+       {
+           -webkit-transform: translateX(-5px);
+           transform: translateX(-5px);
+       }
+       50%
+       {
+           -webkit-transform: translateX(3px);
+           transform: translateX(3px);
+       }
+       65%
+       {
+           -webkit-transform: translateX(-3px);
+           transform: translateX(-3px);
+       }
+       80%
+       {
+           -webkit-transform: translateX(2px);
+           transform: translateX(2px);
+       }
+       100%
+       {
+           -webkit-transform: translateX(0);
+           transform: translateX(0);
+       }
+   }
+
+   .swing:hover
+{
+        -webkit-animation: swing 1s ease;
+        animation: swing 1s ease;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+}
+
+/* ==========================================================================
+                                Parallax Dividers
+   ========================================================================== */
+
+.sep {
+	background-attachment: fixed;
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	height: 450px;
+	position: relative;
+}
+
+.about {
+	background-image: url(../img/code.jpg);
+}
+
+.portfolio {
+ background-image: url(../img/keyboard.jpg);
+}
+
+.contact {
+ margin-bottom: 100px;
+	background-image: url(../img/chip.jpg);
+}
+
+/* ==========================================================================
+                                   Sidenav
    ========================================================================== */
 
 .menu {
@@ -245,258 +481,4 @@ h1, h2, h3, h4, h5, h6 {
 		-ms-transition: all .1s ease-in-out;
 		 -o-transition: all .1s ease-in-out;
 			transition: all .1s ease-in-out;
-}
-
-
-/* ==========================================================================
-   Wrap Sections
-   ========================================================================== */
-
-#headerwrap {
-	background: url(../img/workspace.jpg) no-repeat center top;
-	margin-top: 0px;
-	padding-top:120px;
-	text-align:center;
-	background-attachment: relative;
-	background-position: center center;
-	min-height: 100vh;
-	width: 100%;
-
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-#headerwrap h1 {
-	color:#ffffff;
-	margin-top: 90px;
-	padding-bottom: 30px;
-	letter-spacing: 8px;
-	font-size: 80px;
-	font-weight: bold;
-	text-shadow: 2px 2px 2px #000;
-}
-
-.big-bold {
-  font-size: 1.5em;
-  font-weight: 700;
-}
-
-/* About Wrap & Conf */
-#aboutwrap {
-	margin-top: 80px;
-	margin-bottom: 80px;
-  min-height: 100vh;
-}
-
-#aboutwrap i {
-	font-size: 50px;
-}
-
-.mt {
-	margin-top: 100px;
-}
-
-.name {
-	text-align: center;
-}
-
-.name p {
-	font-size: 22px;
-	font-weight: lighter;
-	margin-top: 15px;
-	letter-spacing: 2px;
-}
-
-.name-label {
-	width: 60px;
-	height: 60px;
-	margin: 0 auto 45px;
-	border-top: 1px solid #000;
-	background: url(../img/name-label.png) center bottom no-repeat;
-	background-size: 35px 35px;
-}
-
-.name-zig {
-	width: 73px;
-	height: 17px;
-	margin: 38px 0 38px;
-	background: url(../img/name-zig.png) 0 0 no-repeat;
-	background-size: 73px 17px;
-}
-
-.name-desc h2 {
-	font-family: 'Oswald', sans-serif;
-	font-size: 40px;
-	line-height: 1.45;
-	font-weight: 300;
-}
-
-/* Separator About - Parallax Section */
-.sep {
-	background-attachment: fixed;
-	background-position: 50% 0;
-	background-repeat: no-repeat;
-	height: 450px;
-	position: relative;
-}
-.about {
-	background-image: url(../img/code.jpg);
-}
-
-/* Portfolio Wrap Section */
-#portfoliowrap {
-	display: block;
-	margin-top: 80px;
-	margin-bottom: 80px;
-}
-
-#portfoliowrap h1 {
-	font-weight: 300;
-	text-align: center;
-	margin-bottom: 50px;
-}
-
-.mb {
-	margin-bottom: 60px;
-}
-
-.proc {
-	padding-top: 15px;
-	padding-bottom: 15px;
-	border-bottom: solid 2px transparent;
-}
-
-#portfoliowrap .proc:hover {
-	background-color: #eee;
-	border-bottom: solid 2px #2f2f2f
-}
-
-.portfolio {
-	background-image: url(../img/keyboard.jpg);
-}
-
-/* Service Wrap */
-#servicewrap {
-	display: block;
-	margin-top: 80px;
-	margin-bottom: 80px;
-}
-
-#servicewrap h1 {
-	font-weight: 300;
-	text-align: center;
-	margin-bottom: 20px;
-}
-
-.service {
-	text-align: left;
-}
-
-.service small {
-	font-size: 12px;
-	font-weight: bold
-}
-
-.service i {
-	float: left;
-	margin-right: 15px;
-	font-size: 30px;
-	vertical-align: middle;
-}
-
-.service .text {
-	color: #767676
-}
-
-/* Testimonials Wrap */
-#testimonials {
-	display: block;
-	margin-top: 80px;
-	margin-bottom: 80px;
-	background-color: #f3f3f3;
-}
-
-/* Contact Wrap */
-#contactwrap {
-	background-color: #2f2f2f;
-	margin-top: 0px;
-	padding-top: 25px;
-	padding-bottom: 25px;
-}
-
-#contactwrap p {
-	color: #f2f2f2;
-}
-
-#contactwrap small {
-	font-size: 13px;
-}
-
-.contact {
-	background-image: url(../img/chip.jpg);
-}
-
-#contactwrap label {
-	color: #f2f2f2;
-	margin-top: 10px;
-}
-
-
-/* Gallery Configuration */
-.photo-wrapper {
-  display: block;
-  position: relative;
-  overflow: hidden;
-  background-color: #2f2f2f;
-  -webkit-transition: background-color 0.4s;
-  -moz-transition: background-color 0.4s;
-  -o-transition: background-color 0.4s;
-  transition: background-color 0.4s;
-}
-.project .overlay {
-  position: absolute;
-  text-align: center;
-  color: #fff;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  -webkit-transition: opacity 0.4s;
-  -moz-transition: opacity 0.4s;
-  -o-transition: opacity 0.4s;
-  transition: opacity 0.4s;
-
-}
-
-.project:hover .photo-wrapper {
-  background-color: #2f2f2f;
-	background-image:url(../img/zoom.png);
-	background-repeat:no-repeat;
-	background-position:center;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	position: relative;
-}
-.project:hover .photo {
-  opacity: 10;
-  filter: alpha(opacity=4000);
-  opacity: 0.1;
-  filter: alpha(opacity=40);
-}
-.project:hover .overlay {
-  opacity: 100;
-  filter: alpha(opacity=10000);
-  opacity: 1;
-  filter: alpha(opacity=100);
-}
-
-.desc {
-	margin-top: 25px;
 }
