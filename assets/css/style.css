@@ -220,6 +220,26 @@ h1, h2, h3, h4, h5, h6 {
 	margin-top: 10px;
 }
 
+.sponsor-levels .col-md-4 div {
+  padding: 15px;
+  margin: 15px;
+  border-radius: 5px;
+  background-color: #2f2f2f;
+  color: #fff;
+}
+
+.bronze {
+  color: #8C7853;
+}
+
+.silver {
+  color: #E6E8FA;
+}
+
+.gold {
+  color: #CFB53B;
+}
+
 /* ==========================================================================
                               Sponsor Hover Effect
    ========================================================================== */
