@@ -219,10 +219,15 @@ h1, h2, h3, h4, h5, h6 {
 	color: #f2f2f2;
 	margin-top: 10px;
 }
-
-.sponsor-levels .col-md-4 div {
+.sponsor-levels {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.tier {
   padding: 15px;
   margin: 15px;
+  flex: 1;
   border-radius: 5px;
   background-color: #2f2f2f;
   color: #fff;
