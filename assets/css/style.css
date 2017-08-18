@@ -224,6 +224,14 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
   width: 100%;
 }
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(max-width: 970px)  {
+  .sponsor-levels {
+    flex-direction: column;
+  }
+}
 .tier {
   padding: 15px;
   margin: 15px;
