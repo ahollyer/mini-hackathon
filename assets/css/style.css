@@ -149,6 +149,20 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 50px;
 }
 
+.sponsor-logos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+}
+
+.sl-div {
+  flex: 1;
+  flex-basis: 33.3%;
+}
+
 .mb {
 	margin-bottom: 60px;
 }
@@ -219,11 +233,13 @@ h1, h2, h3, h4, h5, h6 {
 	color: #f2f2f2;
 	margin-top: 10px;
 }
+
 .sponsor-levels {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
+
 .tier {
   padding: 15px;
   margin: 15px;
